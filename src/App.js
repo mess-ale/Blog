@@ -1,12 +1,13 @@
-import './index.css';
-import Home from './routes/Home';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./route/RoutesHandl";
+import ScrollToTop from "./components/ScrollToTop";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes />
+    </Router>
   );
 }
-
-export default App;
